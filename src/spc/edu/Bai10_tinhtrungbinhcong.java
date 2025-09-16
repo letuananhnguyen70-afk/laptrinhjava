@@ -4,7 +4,7 @@
  */
 package spc.edu;
 
-import java.util.Scanner;
+
 
 /**
  *
@@ -13,17 +13,15 @@ import java.util.Scanner;
 public class Bai10_tinhtrungbinhcong {
     public static void main(String[] args) {
         System.out.println("tinh trung binh cong");
-        Scanner sc = new Scanner(System.in);
-        System.out.println("nhap so luong phan tu:");
-        int n = sc.nextInt();
-        int sum = 0;
-        for(int i = 1; i <= n; i++){
-            System.out.println("nhap so thu" + i +":");
-            int x = sc.nextInt();
-            sum += x;
+        int tong=0,dem=0;
+        for(int i=27;i<=250;i++){
+            if(i%3==0){
+                System.out.print(i+" ");
+                tong +=i;
+                dem++;
+            }
         }
-        double tbc = (double)sum / n;
-        System.out.println("trung binh cong = "+ tbc);
-        sc.close();
+        double trungbinh = (double) tong/dem;
+        System.out.println("trung binh cong =" + trungbinh);
     }
 }
