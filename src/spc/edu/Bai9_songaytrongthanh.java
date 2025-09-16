@@ -20,7 +20,7 @@ public class Bai9_songaytrongthanh {
         
         System.out.println("nhap nam:");
         int nam = nhap.nextInt();
-        int soNgay;
+        int soNgay ;
         
         switch (thang){
             case 1: case 3: case 5: case 7: case 8: case 10: case 12:
@@ -33,7 +33,7 @@ public class Bai9_songaytrongthanh {
                 if ((nam % 400 == 0)||(nam % 4 == 0 && nam % 100 != 0)){
                     soNgay = 29;
                 }else{
-                    soNgay28;
+                    soNgay = 28;
                 }
                 break;
             default:
