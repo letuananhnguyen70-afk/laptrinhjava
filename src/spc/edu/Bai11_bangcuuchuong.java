@@ -11,15 +11,26 @@ package spc.edu;
 public class Bai11_bangcuuchuong {
  
 
-    public static void main(String[] args) {
-
-        // In ra tiêu đề bảng cửu chương
-        System.out.println("Bang Cuu Chuong :");
-
-        // Vòng lặp for để tính và in các phép nhân
-        for (int i = 1; i <= 10; i++) {
-            System.out.println("7 x " + i + " = " + (7 * i));
+    public static void main(String[] args) { 
+               
+        for (int i = 2; i <= 9; i++) {
+            
+            
+            System.out.println("Bang Cuu Chuong " + i + ":");
+            
+            
+            for (int  j = 1;  j <= 10; j++) {
+                System.out.println(i + " x " + i + " = " + i * i);
+            }
+            
+            
+            System.out.println();
         }
     }
-}   
+}
+
+       
+        
+    
+  
 
